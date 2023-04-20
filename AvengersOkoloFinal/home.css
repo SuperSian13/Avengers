@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background: url(https://wallpapercave.com/wp/HGMtO8W.jpg) no-repeat fixed;
+    background-size: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+.nav-link{
+    color: #dddddd;
+}
+p{
+    margin: 5%;
+    font-size: 1.2em ;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+iframe{
+    margin: 10px;
+    width: 672px;
+    height: 378px;
+}
+.btn{
+    font-size: 30px;
+    border: 2px solid white;
+    background: none;
+    letter-spacing: 7px;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    padding: 13px 40px;
+    margin-top: 30px;
+    color: antiquewhite;
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 100px 100px 100px 100px;
+    
+}
+.text{
+    position: relative;
+    max-width: 700px;
+    color: aliceblue;
+}
+.content .text h1{
+    font-size: 2.5em;
+    line-height: 1.4em;
+    font-weight: 300;
+  
+}
+.content .text h1 span{
+font-size: 2.3em;
+font-weight: 600;
+}
+.text article{
+    font-size: 28px;
+    line-height: 25px;
+    margin-top: 18px;
+}
+.grid-wrapper {
+    
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    padding-right: 200px;
+  }
+  
+  .card {
+      max-width: 400px;
+      margin: 50px 10px; 
+      top:0;
+  }
+    
+  .card-container {
+      display: -ms-grid;
+      display: grid;
+      -webkit-perspective: 700px;
+              perspective: 700px;
+      padding-bottom: 30px;
+  }
+    
+  .card-title p, h4, h5 {
+      font-family: 'Nunito' !important;
+      text-align: center;
+      color: white;
+  }
+    
+  .card-text {
+      font-family: 'Nunito' !important;
+      text-align: center;
+      color: white;
+  }
+    
+  .card-flip {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: 1fr;
+      -ms-grid-columns: 1fr;
+          grid-template: 1fr / 1fr;
+          grid-template-areas: "frontAndBack";
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: all 0.7s ease;
+      transition: all 0.7s ease;
+  }
+    
+  .card-flip div {
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  }
+    
+  .front {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: frontAndBack;
+      background-color: #383428 !important;
+  }
+  
+  .back {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: frontAndBack;
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+      background-color: #383428 !important;
+      margin: 0;
+      padding: 0;
+  }
+    
+  .card-container:hover .card-flip {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+  }
+  
+  .btn {
+      color: #383428 !important;
+  }
+  
+  .btn:hover {
+      color: white !important;
+  }
+  
+  .rating {
+      text-decoration: none;
+      color: #ff9800 !important;
+  }
+  
+  .rating:hover {
+      text-decoration: none;
+      color: #ffcc80 !important;
+  }
+    
+  .movie {
+      position: fixed;
+      z-index: -1;
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      bottom: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .text{
+        font-size: 10px;
+    } 
+    .text article{
+        font-size: 14px;
+    }
+     .grid-wrapper{
+        display: none;
+     }
+   }
+#slides{
+    width: 60%;
+    margin-top: 10%;
+    font-family: Arial, sans-serif;
+}
